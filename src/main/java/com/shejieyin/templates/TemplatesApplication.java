@@ -10,4 +10,5 @@ public class TemplatesApplication {
 		SpringApplication.run(TemplatesApplication.class, args);
 	}
 
+
 }
