@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/templates.iml" filepath="$PROJECT_DIR$/templates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/templates-biz-service/templatesbizservice.iml" filepath="$PROJECT_DIR$/templates-biz-service/templatesbizservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/templates-client/templatesclient.iml" filepath="$PROJECT_DIR$/templates-client/templatesclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/templates-common/templatescommon.iml" filepath="$PROJECT_DIR$/templates-common/templatescommon.iml" />
       <module fileurl="file://$PROJECT_DIR$/templates-starter/templatesstarter.iml" filepath="$PROJECT_DIR$/templates-starter/templatesstarter.iml" />
     </modules>

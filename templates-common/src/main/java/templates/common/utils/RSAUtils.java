@@ -1,4 +1,4 @@
-package utils;
+package templates.common.utils;
 
 
 import javax.crypto.Cipher;

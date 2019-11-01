@@ -1,7 +1,7 @@
-package utils;
-import org.apache.commons.lang3.StringUtils;
+package templates.common.utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.StringUtils;
 
 
 public class LogUtils {
@@ -28,7 +28,7 @@ public class LogUtils {
      * @param value		输出信息value
      */
     public static void fmtDebug(Logger logger ,String fmtString,Object...value){
-        if(StringUtils.isBlank(fmtString)){
+        if(StringUtils.isEmpty(fmtString)){
             return ;
         }
         if(null != value && value.length != 0){
@@ -58,7 +58,7 @@ public class LogUtils {
      * @param fmtString 输出信息key
      */
     public static String format(Logger logger ,String fmtString){
-        if(StringUtils.isNotEmpty(fmtString)){
+        if(!StringUtils.isEmpty(fmtString)){
             fmtString = logger.getName()+" | "+ fmtString;
         }else{
             fmtString = logger.getName()+" | ";
@@ -87,7 +87,7 @@ public class LogUtils {
      * @param value		输出信息value
      */
     public static void fmtWarn(Logger logger ,String fmtString,Object...value){
-        if(StringUtils.isBlank(fmtString)){
+        if(StringUtils.isEmpty(fmtString)){
             return ;
         }
         if(null != value && value.length != 0){
@@ -151,7 +151,7 @@ public class LogUtils {
      * @param value		输出信息value
      */
     public static void fmtError(Logger logger ,Throwable throwable,String fmtString,Object...value){
-        if(StringUtils.isBlank(fmtString)){
+        if(StringUtils.isEmpty(fmtString)){
             return ;
         }
         if(null != value && value.length != 0){
@@ -166,7 +166,7 @@ public class LogUtils {
      * @param value		输出信息value
      */
     public static void fmtError(Logger logger , String fmtString, Object...value) {
-        if(StringUtils.isBlank(fmtString)){
+        if(StringUtils.isEmpty(fmtString)){
             return ;
         }
         if(null != value && value.length != 0){

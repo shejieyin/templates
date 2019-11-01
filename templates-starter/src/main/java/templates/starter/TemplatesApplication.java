@@ -1,12 +1,15 @@
 package templates.starter;
 
-import lombok.extern.slf4j.Slf4j;
+
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import utils.LogUtils;
+import org.springframework.context.annotation.ComponentScan;
+
+
 
 @SpringBootApplication
-@Slf4j
+@ComponentScan({"templates.service"})
 public class TemplatesApplication {
 
 	public static void main(String[] args) {

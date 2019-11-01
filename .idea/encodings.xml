@@ -2,7 +2,11 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates-biz-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/templates-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/templates-starter" charset="UTF-8" />
   </component>
 </project>
