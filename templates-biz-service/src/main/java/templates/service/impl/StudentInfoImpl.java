@@ -13,6 +13,7 @@ import templates.service.strategy.getStudentInfo.StudentInfoFactory;
 @Slf4j
 @Service
 public class StudentInfoImpl implements StudentInfo {
+
     @Autowired
     StudentInfoFactory studentInfoFactory;
 
@@ -21,7 +22,6 @@ public class StudentInfoImpl implements StudentInfo {
     public StudentDTO getStudentInfo(StudentQuery studentQuery){
         LogUtils.info(log,studentQuery.toString());
         //todo 入参检查
-
         //执行调用
         return studentInfoFactory.getStrategy(studentQuery.getQueryAction()).getStudentInfo(studentQuery);
 
