@@ -11,7 +11,7 @@ import templates.client.request.StudentQuery;
 import templates.client.service.StudentInfo;
 
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/")
 @Slf4j
 public class TestController {
     @Autowired
@@ -29,5 +29,12 @@ public class TestController {
         query.setQueryAction(QueryAction.QUERY_BY_NAME.getQueryAction());
         System.out.println(studentInfo.getStudentInfo(query));
 
+    }
+
+
+    @RequestMapping(value="/index",method = RequestMethod.GET)
+    public String index(){
+       // model.addAttribute("name","world");
+        return "index";
     }
 }
